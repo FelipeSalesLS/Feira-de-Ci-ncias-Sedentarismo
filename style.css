@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-.favicon {
-    border-radius: 50%;
-}
 
 
 body {
@@ -20,6 +17,10 @@ body {
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -27,26 +28,13 @@ header {
     height: calc(120px + 32px);
 }
 
-header div {
-    width: 120px;
-    margin: auto;
-    background: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
-    border-radius: 50%;
+
+.header-1 {
     display: flex;
-    padding: 4px;
-    transition: transform .3s;
+    justify-content: center;
 }
 
-header div:hover {
-    transform: scale(1.1);
-}
 
-header img {
-    width: 100%;
-    border-radius: 50%;
-    
-
-}
 
 main {
     max-width: 580px;
@@ -62,6 +50,9 @@ section {
     background: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
     padding: 4px;
     border-radius: 10px;
+    max-width: 500px;
+    
+    
     
 }
 
@@ -85,7 +76,9 @@ section ul {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    margin-top: 24px;  
+    margin-top: 24px;
+    max-width: 301px;
+     
 }
 
 section ul li {
@@ -102,8 +95,22 @@ section  img {
    
 }
 
-.uol {
-    height: 90px;
+.apps-sd {
+    max-width: 301px;
+    
+    
+}
+
+
+
+.img-header {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    
+    
+    
 }
 
 
@@ -111,6 +118,8 @@ section  img {
 .canais {
     
     border-radius: 990px;
+    max-width: 301px;
+   
         
 }
 
@@ -135,9 +144,6 @@ ul {
 
 /* animations css */
 
-header div {
-    animation: fromTop  .7s .2s backwards;
-}
 
  main section {
     animation: fromBottom .7s backwards;
